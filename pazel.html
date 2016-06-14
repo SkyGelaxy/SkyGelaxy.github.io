@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <meta charset="utf-8">
+  <title>Личный сайт студента GeekBrains</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="text/javascript">
+    
+
+    function AskQuestions() 
+    {
+     var userAnswer = document.getElementById("userAnswer1").value;
+     var result = 0;
+     if(userAnswer == "уроки")
+      result++;
+
+     userAnswer = document.getElementById("userAnswer2").value;
+     if(userAnswer == "по лестнице")
+      result++;
+
+    if(result == 2)
+      alert('Вы угодали все загадки');
+    else if(result == 1)
+      alert('Вы угодали одну загадку');
+    else
+      alert('Вы ничего не угодали');
+     }
+
+
+    
+  </script>
+</head>
+<body>
+
+<div id="header">
+  <a href="сайт.html">Главная</a><span></span>
+  <a href="#">Загадки</a><span></span>
+  <a href="#">Угодайка</a><span></span>
+  <a href="#">угодайка мультиплеер</a><span></span>
+</div>
+<div id="content">
+   <h1>Личный сайт студента GeekBrains</h1>  
+   <div id="center">
+   <h3>Игра в загадки</h3> 
+   <div id="box">
+        <h5>Отгадай загадки</h5>
+        <p>Что можно приготовить, но нельзя съесть</p>
+        <input type="text" id="userAnswer1">
+
+        <p>По чему ходят часто, а ездят редко</p>
+        <input type="text" id="userAnswer2">
+
+        <br></br>
+        <a href="#" onclick="AskQuestions();">Отправить</a>
+
+
+
+
+   </div>
+</div>
+
+<div id="footer">
+   Copyright © 2016 <a href="https://geekbrains.ru/">GeekBrains</a>
+     
+ </div>
+
+</body>
+</html>
